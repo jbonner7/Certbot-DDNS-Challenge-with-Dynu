@@ -7,7 +7,7 @@ Short of owning and managing your own PKI infrastructure, you will run into siut
 The **create_dns_record** script will create a TXT challenge record and output the record ID to a file named dns_record_id.txt in /tmp. **Delete_dns_record.sh** will lookup the record ID in the txt file and request to remove the challenge domain from the API. Certbot will use this method to validate the domain is legitimitely owned and create the certificate. 
 
 ## HTTP-01 Challenge
-The **create_certbot_cert_http** script initiates the ACME challenge that attemps to place a file on the webroot of your web server that contains key material. Let's Encrypt then tries to retrive the file from your web server over the internet. Let's Encrypt will validate the responses from the web server and issue the certificate if successful. 
+The **create_certbot_cert_http** script initiates the ACME challenge that attemps to place a file on the webroot of your web server that contains key material. Let's Encrypt then tries to retrieve the file from your web server over the internet. Let's Encrypt will validate the responses from the web server and issue the certificate if successful. 
 
 ## Requirements
 1. Dnyu account or other free ddns
